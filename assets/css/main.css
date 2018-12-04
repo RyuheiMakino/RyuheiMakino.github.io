@@ -3116,7 +3116,18 @@ input, select, textarea {
 			}
 
 		}
-
+#pageTop{
+	background:#DDD;
+	border-radius:5px;
+	color:#FFF;
+	padding:20px;
+	position:fixed;
+	bottom:20px;
+	right:20px;
+	}
+#pageTop:hover{
+	background:#EEE;
+	}
 /* Table */
 
 	.table-wrapper {
