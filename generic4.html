@@ -11,6 +11,25 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<script type="text/javascript">
+						$(function() {
+						var topBtn = $('#pageTop');
+						topBtn.hide();
+						$(window).scroll(function () {
+						if ($(this).scrollTop() > 100) {
+						topBtn.fadeIn();
+						} else {
+						topBtn.fadeOut();
+							}
+						});
+    					topBtn.click(function () {
+						$('body,html').animate({
+						scrollTop: 0
+						}, 3000);
+						return false;
+    						});
+						});
+						</script>
 	</head>
 	<body class="is-preload">
 
@@ -94,6 +113,7 @@
 			<footer id="footer" class="wrapper alt">
 				<div class="inner">
 					<ul class="menu">
+						<a id="pageTop" href="#header"><span style="color:#EE4500">ページトップへ</span></a>
 						<li>&copy; MAKINO,Ryuhei. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
 					</ul>
 				</div>
